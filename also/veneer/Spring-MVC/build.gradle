@@ -24,12 +24,13 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	compileOnly 'org.projectlombok:lombok'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	implementation 'org.springframework.boot:spring-boot-starter-web' // Spring Web
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' // Thymeleaf Template Engine
+	compileOnly 'org.projectlombok:lombok' // Lombok for reducing boilerplate
+	developmentOnly 'org.springframework.boot:spring-boot-devtools' // DevTools for development
+	annotationProcessor 'org.projectlombok:lombok' // Lombok annotation processor
+	testImplementation 'org.springframework.boot:spring-boot-starter-test' // Testing
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher' // JUnit Platform for tests
 }
 
 tasks.named('test') {
