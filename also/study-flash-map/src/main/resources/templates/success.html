@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Success</title>
+</head>
+<body>
+    <h1>Success Page</h1>
+    <div th:if="${message}" th:text="${message}" style="color: green;"></div>
+    <a href="/form">Back to Form</a>
+</body>
+</html>
